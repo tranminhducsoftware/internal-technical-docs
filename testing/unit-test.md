@@ -23,3 +23,8 @@ public async Task PlaceOrder_Should_Create_Order_When_Valid()
     var result = await handler.Handle(new PlaceOrderCommand(...));
     result.Should().NotBeNull();
 }
+```
+
+## Coverage Target
+- ≥ 80% cho Application layer.
+- ≥ 90% cho domain rules (value objects, entities).
